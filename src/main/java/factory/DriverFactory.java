@@ -23,7 +23,8 @@ public class DriverFactory {
 			
 		}else if (browser.equalsIgnoreCase("chrome")) {
 			LoggerLoad.info("Testing on chrome");
-			WebDriverManager.chromedriver().driverVersion("116.0.5845.98").setup();
+			WebDriverManager.chromedriver().browserVersion("116.0.5845.98").setup();
+			//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
 		}else if (browser.equalsIgnoreCase("safari")) {
